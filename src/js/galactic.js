@@ -49,6 +49,4 @@ export class AgeChanger {
     this.marsYearsLeft = Math.abs(this.marsLifeExpect - this.marsAge);
     this.jupiterYearsLeft = Math.abs(this.jupiterLifeExpect - this.jupiterAge);
   }
-
-
 }
