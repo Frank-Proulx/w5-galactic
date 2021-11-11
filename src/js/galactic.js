@@ -44,11 +44,11 @@ export class AgeChanger {
   }
 
   yearsLeft() {
-    this.mercuryYearsLeft = this.mercuryLifeExpect - this.mercuryAge;
-    this.venusYearsLeft = this.venusLifeExpect - this.venusAge;
-    this.marsYearsLeft = this.marsLifeExpect - this.marsAge;
-    this.jupiterYearsLeft = this.jupiterLifeExpect - this.jupiterAge;
+    this.mercuryYearsLeft = Math.abs(this.mercuryLifeExpect - this.mercuryAge);
+    this.venusYearsLeft = Math.abs(this.venusLifeExpect - this.venusAge);
+    this.marsYearsLeft = Math.abs(this.marsLifeExpect - this.marsAge);
+    this.jupiterYearsLeft = Math.abs(this.jupiterLifeExpect - this.jupiterAge);
   }
 
-  
+
 }
