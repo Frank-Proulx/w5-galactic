@@ -11,14 +11,20 @@
         <form id="calculate">
           <div class="form-group">
             <label for="age">Enter your age</label>
-            <input id="age" class="form-control" type="text">
+            <input id="age" class="form-control" type="number" min=1 required>
           </div>
           <div class="form-group">
-            <label for="life-expect">Enter the life expectancy for your demographic (or leave blank for default for American of 79 years)</label>
-            <input id="life-expect" class="form-control" type="text">
+            <label for="life-expect">Enter the life expectancy for your demographic if known</label>
+            <input id="life-expect" class="form-control" type="number" min=1>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        <div class="results">
+          <h2>Earth</h2>
+          <p>Age in local years: <span id="earth-age"></span></p>
+          <p>Life expectancy in local years: <span id="earth-expect"></span></p>
+          <p><span id="earth-left"></span></p>
+        </div>
       </div>
       <div class="col-md-6 results">
         <div>

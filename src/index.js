@@ -6,9 +6,17 @@ import { AgeChanger } from './js/galactic.js';
 
 function ageChecker(age, lifeExpect){
   if (age > lifeExpect) {
-    return "Congrats! You've exceeded your life expectancy by";
+    return "Congrats! You've exceeded your expected number of years by";
   } else {
     return "Your number of remaining years is";
+  }
+}
+
+function earthDisplayer(lifeExpect) {
+  if (lifeExpect !== undefined) {
+    return lifeExpect;
+  } else {
+    return 73;
   }
 }
 
@@ -28,6 +36,9 @@ $("#calculate").submit(function(event) {
   calculated.jupiter();
   calculated.yearsLeft();
   $(".results").show();
+  $("#earth-age").html(age);
+  $("#earth-expect").html(earthDisplayer(lifeExpect));
+  $("#earth-left").html(`${ageChecker(age, earthDisplayer(lifeExpect))} ${Math.abs(earthDisplayer(lifeExpect) - age)}!`);
   $("#mercury-age").html(calculated.mercuryAge);
   $("#mercury-expect").html(calculated.mercuryLifeExpect);
   $("#mercury-left").html(`${ageChecker(calculated.mercuryAge, calculated.mercuryLifeExpect)} ${calculated.mercuryYearsLeft}!`);

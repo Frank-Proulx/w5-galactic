@@ -1,3 +1,11 @@
 .results {
   display: none;
 }
+
+.btn {
+  margin: 30px 0;
+}
+
+#life-expect {
+  width: 40%;
+}
