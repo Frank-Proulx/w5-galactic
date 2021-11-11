@@ -11,22 +11,26 @@ describe('AgeChanger', () => {
   });
 
   test('should create a property holding the inputted age in mercury years', () => {
-    let calculated = new AgeChanger(42);
+    let calculated = new AgeChanger(42, 76);
+    calculated.mercury();
     expect(calculated.mercury).toEqual(175);
   });
 
   test('should create a property holding the inputted age in venus years', () => {
-    let calculated = new AgeChanger(42);
+    let calculated = new AgeChanger(42, 76);
+    calculated.venus();
     expect(calculated.venus).toEqual(68);
   });
 
   test('should create a property holding the inputted age in mars years', () => {
-    let calculated = new AgeChanger(42);
+    let calculated = new AgeChanger(42, 76);
+    calculated.mars();
     expect(calculated.mars).toEqual(22);
   });
 
   test('should create a property holding the inputted age in jupiter years', () => {
-    let calculated = new AgeChanger(42);
+    let calculated = new AgeChanger(42, 76);
+    calculated.jupiter();
     expect(calculated.jupiter).toEqual(4);
   });
 
