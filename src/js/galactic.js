@@ -27,7 +27,11 @@ export class AgeChanger {
 
   mars() {
     this.marsAge = parseInt((this.age / 1.88).toFixed());
-    this.marsLifeExpect = parseInt((this.lifeExpect / 1.88).toFixed());
+    if (this.lifeExpect !== undefined) {
+      this.marsLifeExpect = parseInt((this.lifeExpect / 1.88).toFixed());
+    } else {
+      this.marsLifeExpect = parseInt((this.lifeExpectDefault / 1.88).toFixed());
+    }
   }
 
   jupiter() {
