@@ -46,7 +46,6 @@ describe('AgeChanger', () => {
     calculated.venus();
     expect(calculated.venusAge).toEqual(68);
     expect(calculated.venusLifeExpect).toEqual(123);
-
   });
 
   test('should create a property holding the life expectancy in mars years', () => {
@@ -54,7 +53,6 @@ describe('AgeChanger', () => {
     calculated.mars();
     expect(calculated.marsAge).toEqual(22);
     expect(calculated.marsLifeExpect).toEqual(40);
-
   });
 
   test('should create a property holding the life expectancy in jupiter years', () => {
@@ -62,7 +60,6 @@ describe('AgeChanger', () => {
     calculated.jupiter();
     expect(calculated.jupiterAge).toEqual(4);
     expect(calculated.jupiterLifeExpect).toEqual(6);
-
   });
 
 

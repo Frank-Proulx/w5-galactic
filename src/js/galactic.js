@@ -24,6 +24,7 @@ export class AgeChanger {
 
   jupiter() {
     this.jupiterAge = parseInt((this.age / 11.86).toFixed());
+    this.jupiterLifeExpect = parseInt((this.lifeExpect / 11.86).toFixed());
   }
 
 }
