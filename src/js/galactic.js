@@ -1,8 +1,10 @@
 import { parse } from "@babel/core";
 
 export class AgeChanger {
-  constructor(age) {
+  constructor(age, lifeExpect) {
     this.age = age;
+    this.lifeExpect = lifeExpect;
+    this.lifeExpectDefault = 79;
   }
 
   mercury() {
