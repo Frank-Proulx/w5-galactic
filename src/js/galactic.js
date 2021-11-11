@@ -6,4 +6,9 @@ export class AgeChanger {
   mercury() {
     return this.age / 0.24;
   }
+
+  venus() {
+    
+  }
+
 }
