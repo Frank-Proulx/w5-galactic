@@ -44,6 +44,9 @@ export class AgeChanger {
   }
 
   yearsLeft() {
-    
+    this.mercuryYearsLeft = this.mercuryLifeExpect - this.mercuryAge;
+    this.venusYearsLeft = this.venusLifeExpect - this.venusAge;
+    this.marsYearsLeft = this.marsLifeExpect - this.marsAge;
+    this.jupiterYearsLeft = this.jupiterLifeExpect - this.jupiterAge;
   }
 }
