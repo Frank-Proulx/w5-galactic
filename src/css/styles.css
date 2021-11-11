@@ -1,3 +1,9 @@
+body {
+  background-image: url('./../assets/images/galaxy.jpg');
+  background-size: cover;
+  color: white;
+}
+
 .results {
   display: none;
 }
@@ -6,6 +12,15 @@
   margin: 30px 0;
 }
 
-#life-expect {
-  width: 40%;
+label {
+  font-size: 25px;
+  margin-bottom: 10px;
 }
+
+#calculate {
+  width: 50%;
+}
+
+/* #age, #life-expect {
+  width: 30%;
+} */
