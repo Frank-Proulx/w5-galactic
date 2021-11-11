@@ -6,13 +6,13 @@ body {
 
 h1 {
   text-align: center;
-  padding: 30px 0 10px 0;
-  font-size: 60px;
+  padding: 30px 0 0 0;
+  font-size: 55px;
 }
 
 h2 {
   margin: 20px 0 15px 0;
-  color: lightblue;
+  color: lightgreen;
 }
 
 .results {
@@ -39,4 +39,24 @@ p{
   margin: 0;
   font-size: 20px;
   line-height: 24px;
+}
+
+#blue {
+  color: rgb(118, 188, 211);
+}
+
+#grey {
+  color: lightgray;
+}
+
+#yellow {
+  color: yellow;
+}
+
+#red {
+  color: #da2c43;
+}
+
+#gold {
+  color: rgb(255, 174, 0);
 }

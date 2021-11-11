@@ -2,7 +2,7 @@
 
 #### By Frank Proulx
 
-#### A website that takes the user's age in Earth years and shows how many years they have lived in other planets' years.
+#### A website that takes the user's age in Earth years and displays info about their age and life expectancy on other planets
 
 ## Technologies Used
 
@@ -13,25 +13,25 @@
 * JQuery
 * Jest
 * Babel
-* NPM
+* Webpack
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+This website takes a users age and optionally their specific life expectancy and displays their age in years for Earth, Mercury, Venus, Mars and Jupiter. It shows how many years they have left according to their life expectancy, and if they've exceeded their expectancy it shows by how many years. 
 
 ## Setup/Installation Requirements
 
 * Create and/or navigate to the directory you would like to contain this project on your computer.
 * Initialize a git repository by typing **git init** in the terminal.
-* Type **git clone https://github.com/Frank-Proulx/insert_name_here** to clone the repository to your local machine.
-* Open the file "index.html" in the newly created **""** folder by typing **cd insert_name_here** and pressing return to navigate into the project folder. Once in the project folder type  Then type **open index.html** in the terminal from within the **dist** folder in the **insert_name_here** folder.  
+* Type **git clone https://github.com/Frank-Proulx/w5-galactic** to clone the repository to your local machine.
+* Type npm install in the terminal to install all dependencies.
+* Type npm run start into the terminal to start a server displaying the page   
 
 ## Link to [GitHub Pages](https://frank-proulx.github.io/w5-galactic/)
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+No known bugs
 
 ## License
 

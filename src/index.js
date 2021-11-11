@@ -6,7 +6,7 @@ import { AgeChanger } from './js/galactic.js';
 
 function ageChecker(age, lifeExpect){
   if (age > lifeExpect) {
-    return "Congrats! You've exceeded your expected number of years by";
+    return "You've exceeded your expected number of years by";
   } else {
     return "Your number of remaining years is";
   }
@@ -38,17 +38,17 @@ $("#calculate").submit(function(event) {
   $(".results").show();
   $("#earth-age").html(age);
   $("#earth-expect").html(earthDisplayer(lifeExpect));
-  $("#earth-left").html(`${ageChecker(age, earthDisplayer(lifeExpect))} ${Math.abs(earthDisplayer(lifeExpect) - age)}!`);
+  $("#earth-left").html(`${ageChecker(age, earthDisplayer(lifeExpect))} ${Math.abs(earthDisplayer(lifeExpect) - age)}`);
   $("#mercury-age").html(calculated.mercuryAge);
   $("#mercury-expect").html(calculated.mercuryLifeExpect);
-  $("#mercury-left").html(`${ageChecker(calculated.mercuryAge, calculated.mercuryLifeExpect)} ${calculated.mercuryYearsLeft}!`);
+  $("#mercury-left").html(`${ageChecker(calculated.mercuryAge, calculated.mercuryLifeExpect)} ${calculated.mercuryYearsLeft}`);
   $("#venus-age").html(calculated.venusAge);
   $("#venus-expect").html(calculated.venusLifeExpect);
-  $("#venus-left").html(`${ageChecker(calculated.venusAge, calculated.venusLifeExpect)} ${calculated.venusYearsLeft}!`);
+  $("#venus-left").html(`${ageChecker(calculated.venusAge, calculated.venusLifeExpect)} ${calculated.venusYearsLeft}`);
   $("#mars-age").html(calculated.marsAge);
   $("#mars-expect").html(calculated.marsLifeExpect);
-  $("#mars-left").html(`${ageChecker(calculated.marsAge, calculated.marsLifeExpect)} ${calculated.marsYearsLeft}!`);
+  $("#mars-left").html(`${ageChecker(calculated.marsAge, calculated.marsLifeExpect)} ${calculated.marsYearsLeft}`);
   $("#jupiter-age").html(calculated.jupiterAge);
   $("#jupiter-expect").html(calculated.jupiterLifeExpect);
-  $("#jupiter-left").html(`${ageChecker(calculated.jupiterAge, calculated.jupiterLifeExpect)} ${calculated.jupiterYearsLeft}!`);
+  $("#jupiter-left").html(`${ageChecker(calculated.jupiterAge, calculated.jupiterLifeExpect)} ${calculated.jupiterYearsLeft}`);
 });
