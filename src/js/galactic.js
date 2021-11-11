@@ -14,7 +14,7 @@ export class AgeChanger {
   }
 
   mars() {
-    
+    return parseInt((this.age / 1.88).toFixed());
   }
 
 }
