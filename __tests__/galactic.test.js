@@ -65,8 +65,12 @@ describe('AgeChanger', () => {
   test('should create a property holding the life expectancy in mercury years based on the default if no life expectancy is inputted (it is undefined)', () => {
     let calculated = new AgeChanger(42, undefined);
     calculated.mercury();
-    expect(calculated.mercuryAge).toEqual(175);
     expect(calculated.mercuryLifeExpect).toEqual(329);
   });
 
+  test('should create a property holding the life expectancy in venus years based on the default if no life expectancy is inputted (it is undefined)', () => {
+    let calculated = new AgeChanger(42, undefined);
+    calculated.venus();
+    expect(calculated.venusLifeExpect).toEqual(127);
+  });
 });
