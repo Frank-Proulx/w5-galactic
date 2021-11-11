@@ -1,11 +1,23 @@
 body {
-  background-image: url('./../assets/images/galaxy.jpg');
+  background-image: url('./../assets/images/galaxy2.jpg');
   background-size: cover;
   color: white;
 }
 
+h1 {
+  text-align: center;
+  padding: 30px 0 10px 0;
+  font-size: 60px;
+}
+
+h2 {
+  margin: 20px 0 15px 0;
+  color: lightblue;
+}
+
 .results {
   display: none;
+  margin-top: 15px;
 }
 
 .btn {
@@ -18,9 +30,13 @@ label {
 }
 
 #calculate {
-  width: 50%;
+  margin-top: 60px;
+  width: 75%;
 }
 
-/* #age, #life-expect {
-  width: 30%;
-} */
+p{
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+}

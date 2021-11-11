@@ -7,14 +7,16 @@
   <div class="container">
     <h1>Calculate your age throughout the cosmos!</h1>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-4">
         <form id="calculate">
           <div class="form-group">
             <label for="age">Enter your age</label>
             <input id="age" class="form-control" type="number" min=1 required>
           </div>
           <div class="form-group">
-            <label for="life-expect">Enter the life expectancy for your demographic if known</label>
+            <label for="life-expect">Enter the life expectancy for your demographic (if known)</label>
             <input id="life-expect" class="form-control" type="number" min=1>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
@@ -26,7 +28,9 @@
           <p><span id="earth-left"></span></p>
         </div>
       </div>
-      <div class="col-md-6 results">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-5 results">
         <div>
           <h2>Mercury</h2>
           <p>Age in local years: <span id="mercury-age"></span></p>
