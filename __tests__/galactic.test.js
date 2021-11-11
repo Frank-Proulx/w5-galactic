@@ -99,4 +99,16 @@ describe('AgeChanger', () => {
     expect(calculated.jupiterYearsLeft).toEqual(3);
   });
 
+  test('should check the lifeExpect and age for each planet and return the difference adding logic to ensure the difference is always a positive number', () => {
+    let calculated = new AgeChanger(100, undefined);
+    calculated.mercury();
+    calculated.venus();
+    calculated.mars();
+    calculated.jupiter();
+    calculated.yearsLeft();
+    expect(calculated.mercuryYearsLeft).toEqual(88);
+    expect(calculated.venusYearsLeft).toEqual(34);
+    expect(calculated.marsYearsLeft).toEqual(11);
+    expect(calculated.jupiterYearsLeft).toEqual(1);
+  });
 });
