@@ -73,4 +73,12 @@ describe('AgeChanger', () => {
     calculated.venus();
     expect(calculated.venusLifeExpect).toEqual(127);
   });
+
+  test('should create a property holding the life expectancy in mars years based on the default if no life expectancy is inputted (it is undefined)', () => {
+    let calculated = new AgeChanger(42, undefined);
+    calculated.mars();
+    expect(calculated.marsLifeExpect).toEqual(42);
+  });
+
+
 });
