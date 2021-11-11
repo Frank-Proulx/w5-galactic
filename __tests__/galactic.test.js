@@ -66,7 +66,7 @@ describe('AgeChanger', () => {
     let calculated = new AgeChanger(42, undefined);
     calculated.mercury();
     expect(calculated.mercuryAge).toEqual(175);
-    expect(calculated.mercuryLifeExpectDefault).toEqual(329);
+    expect(calculated.mercuryLifeExpect).toEqual(329);
   });
 
 });

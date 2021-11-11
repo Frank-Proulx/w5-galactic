@@ -9,7 +9,11 @@ export class AgeChanger {
 
   mercury() {
     this.mercuryAge = parseInt((this.age / 0.24).toFixed());
-    this.mercuryLifeExpect = parseInt((this.lifeExpect / 0.24).toFixed());
+    if (this.lifeExpect !== undefined) {
+      this.mercuryLifeExpect = parseInt((this.lifeExpect / 0.24).toFixed());
+    } else {
+      this.mercuryLifeExpect = parseInt((this.lifeExpectDefault / 0.24).toFixed());
+    }
   }
 
   venus() {
