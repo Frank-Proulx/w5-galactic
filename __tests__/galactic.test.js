@@ -18,5 +18,10 @@ describe('AgeChanger', () => {
     expect(calculated.venus()).toEqual(68);
   });
 
+  test('should create a method that returns the inputted age in mars years', () => {
+    let calculated = new AgeChanger(42);
+    expect(calculated.mars()).toEqual(22);
+  });
+
 
 });
