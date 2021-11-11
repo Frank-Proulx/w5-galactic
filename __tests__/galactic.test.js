@@ -62,5 +62,11 @@ describe('AgeChanger', () => {
     expect(calculated.jupiterLifeExpect).toEqual(6);
   });
 
+  test('should create a property holding the life expectancy in mercury years based on the default if no life expectancy is inputted (it is undefined)', () => {
+    let calculated = new AgeChanger(42, undefined);
+    calculated.mercury();
+    expect(calculated.mercuryAge).toEqual(175);
+    expect(calculated.mercuryLifeExpectDefault).toEqual(329);
+  });
 
 });
