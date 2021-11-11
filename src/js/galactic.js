@@ -8,19 +8,20 @@ export class AgeChanger {
   }
 
   mercury() {
-    this.mercury = this.age / 0.24;
+    this.mercuryAge = parseInt((this.age / 0.24).toFixed());
+    this.mercuryLifeExpect = parseInt((this.lifeExpect / 0.24).toFixed());
   }
 
   venus() {
-    this.venus = parseInt((this.age / 0.62).toFixed());
+    this.venusAge = parseInt((this.age / 0.62).toFixed());
   }
 
   mars() {
-    this.mars = parseInt((this.age / 1.88).toFixed());
+    this.marsAge = parseInt((this.age / 1.88).toFixed());
   }
 
   jupiter() {
-    this.jupiter = parseInt((this.age / 11.86).toFixed());
+    this.jupiterAge = parseInt((this.age / 11.86).toFixed());
   }
 
 }
