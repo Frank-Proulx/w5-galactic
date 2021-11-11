@@ -14,6 +14,7 @@ export class AgeChanger {
 
   venus() {
     this.venusAge = parseInt((this.age / 0.62).toFixed());
+    this.venusLifeExpect = parseInt((this.lifeExpect / 0.62).toFixed());
   }
 
   mars() {
