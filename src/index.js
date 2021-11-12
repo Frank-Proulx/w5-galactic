@@ -51,4 +51,6 @@ $("#calculate").submit(function(event) {
   $("#jupiter-age").html(calculated.jupiterAge);
   $("#jupiter-expect").html(calculated.jupiterLifeExpect);
   $("#jupiter-left").html(`${ageChecker(calculated.jupiterAge, calculated.jupiterLifeExpect)} ${calculated.jupiterYearsLeft}`);
+  $("#fly-life").html((age * 105120).toLocaleString());
+  $("#sun-times").html(parseInt(((4603000000 / age).toFixed())).toLocaleString());
 });
